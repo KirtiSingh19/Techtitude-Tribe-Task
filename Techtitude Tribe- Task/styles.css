@@ -1,0 +1,49 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ID selector */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Class selector */
+section {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+/* Descendant selector */
+header h1 {
+    font-size: 2rem;
+}
+
+/* Attribute selector */
+[lang="en"] {
+    color: #333;
+}
+
+/* Pseudo-class selector */
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Pseudo-element selector */
+section::first-line {
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS and JavaScript</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS and JavaScript</h1>
+    </header>
+    <main>
+        <section>
+            <h2>What is CSS?</h2>
+            <p>CSS stands for Cascading Style Sheets. It describes how HTML elements are to be displayed on screen,
+                paper, or in other media.</p>
+        </section>
+        <section>
+            <h2>What is JavaScript?</h2>
+            <p>JavaScript is a programming language that can be used to add interactivity to your webpage.</p>
+            <button id="myButton">Click Me!</button>
+            <p id="message"></p>
+        </section>
+    </main>
+    <!-- Embedding JavaScript -->
+    <script>
+        // JavaScript Syntax: A basic function
+        function showMessage() {
+            // Selecting the paragraph element
+            var messageElement = document.getElementById("message");
+            // Setting the text content of the paragraph
+            messageElement.textContent = "Hello, you clicked the button!";
+        }
+
+        // Adding an event listener to the button
+        var button = document.getElementById("myButton");
+        button.addEventListener("click", showMessage);
+    </script>
+</body>
+
+</html>
